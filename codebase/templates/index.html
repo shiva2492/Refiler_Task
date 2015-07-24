@@ -1,0 +1,28 @@
+{% extends "template.html" %}
+{% block content %}
+<a href="{{ url_for('RestaurantEntry') }}">Restaurent Entry</a></br>
+<a href="{{url_for('RestaurantMenu')}}">Restaurent Menu</a>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+
+<table>
+{%if  result %}
+    {% for result in results  %}
+        <tr>
+             <th>Restaurant name </th>
+             <td> {{ result['Rname'] }} </td>
+        </tr>
+    {% endfor %}
+{% endif %}
+</table>
+
+{% endblock %}
+
+
