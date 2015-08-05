@@ -1,6 +1,6 @@
 # Flask Based Web Application
 Small flask based web application for resturant management
-This api will create a Restaurant database and the schema for it, providing a web based interface to make entries to the database 
+This application will create a Restaurant database and the schema for it, providing a web based interface to make entries to the database 
 created before.
 
 Usage instruction- 
