@@ -1,5 +1,5 @@
 # Flask Based Web Application
-Small flask based web application for resturant management
+Small flask based web application for restaurant management
 This application will create a Restaurant database and the schema for it, providing a web based interface to make entries to the database 
 created before.
 
